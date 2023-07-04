@@ -1,7 +1,5 @@
 
 
-The code starts by including the necessary header files: <iostream> for input/output operations and <list> to use the list container.
-
 The Graph class is defined, which represents the graph data structure and contains methods to perform DFS. The class has the following private member variables:
 
 numVertices: Represents the number of vertices in the graph.
