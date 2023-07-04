@@ -1,0 +1,28 @@
+This code implements the Depth First Search (DFS) algorithm in C++. Here's a step-by-step explanation of the code:
+
+The code starts by including the necessary header files: <iostream> for input/output operations and <list> to use the list container.
+
+The Graph class is defined, which represents the graph data structure and contains methods to perform DFS. The class has the following private member variables:
+
+numVertices: Represents the number of vertices in the graph.
+adjLists: A pointer to an array of lists. Each list represents the adjacency list for a particular vertex.
+visited: A boolean array to keep track of visited vertices during the DFS traversal.
+The Graph class constructor is defined. It initializes the number of vertices, creates an array of lists to store the adjacency lists, and allocates memory for the visited array.
+
+The addEdge method is defined to add an edge between two vertices. It takes the source vertex src and destination vertex dest as parameters and adds dest to the adjacency list of src.
+
+The DFS method is defined to perform the DFS traversal. It takes a starting vertex vertex as a parameter. Within this method:
+
+The visited array is updated to mark the current vertex as visited.
+The adjacency list for the vertex is retrieved from the adjLists array.
+The current vertex is printed.
+A loop iterates over the adjacent vertices of the current vertex using an iterator i. For each adjacent vertex:
+If it has not been visited (!visited[*i]), the DFS method is recursively called on that vertex.
+In the main function:
+
+An instance of the Graph class g is created with 4 vertices.
+Edges are added to the graph using the addEdge method.
+The DFS method is called on the vertex 2 to start the DFS traversal.
+The program outputs the DFS traversal result, which shows the vertices visited in the order of the DFS traversal.
+
+In the given example, the DFS traversal starts from vertex 2 and visits vertices in the order: 2 -> 0 -> 1 -> 3.
