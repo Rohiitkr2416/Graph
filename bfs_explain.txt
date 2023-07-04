@@ -1,4 +1,4 @@
-This code implements the Depth First Search (DFS) algorithm in C++. Here's a step-by-step explanation of the code:
+
 
 The code starts by including the necessary header files: <iostream> for input/output operations and <list> to use the list container.
 
